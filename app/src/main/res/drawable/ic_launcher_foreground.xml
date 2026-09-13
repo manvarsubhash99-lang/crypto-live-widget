@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Outer Shield / Hexagon Ring -->
+    <path
+        android:pathData="M54,26 L76,38 L76,64 L54,76 L32,64 L32,38 Z"
+        android:strokeWidth="3.5"
+        android:strokeColor="#10B981"
+        android:fillColor="#1E293B" />
+    <!-- Crypto Trend Line with Nodes -->
+    <path
+        android:pathData="M38,58 L46,50 L52,54 L60,42 L70,45"
+        android:strokeWidth="3"
+        android:strokeColor="#06B6D4"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <!-- Candlestick Bar 1 -->
+    <path
+        android:pathData="M42,61 L42,65 M42,47 L42,51"
+        android:strokeWidth="1.5"
+        android:strokeColor="#10B981" />
+    <path
+        android:pathData="M40,51 h4 v10 h-4 Z"
+        android:fillColor="#10B981" />
+    <!-- Candlestick Bar 2 (Bullish) -->
+    <path
+        android:pathData="M56,38 L56,41 M56,53 L56,56"
+        android:strokeWidth="1.5"
+        android:strokeColor="#10B981" />
+    <path
+        android:pathData="M54,41 h4 v12 h-4 Z"
+        android:fillColor="#10B981" />
+    <!-- Candlestick Bar 3 (Top Peak) -->
+    <path
+        android:pathData="M66,35 L66,38 M66,46 L66,49"
+        android:strokeWidth="1.5"
+        android:strokeColor="#34D399" />
+    <path
+        android:pathData="M64,38 h4 v8 h-4 Z"
+        android:fillColor="#34D399" />
+    <!-- Central Coin Sparkle Node -->
+    <path
+        android:pathData="M60,42 m-3,0 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0"
+        android:fillColor="#F59E0B" />
+</vector>

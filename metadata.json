@@ -1,0 +1,6 @@
+{
+  "name": "CryptoLive Widget",
+  "description": "Real-time cryptocurrency price tracker and desktop widget displaying top coins, detailed market data, interactive charts, currency converter, and price alerts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

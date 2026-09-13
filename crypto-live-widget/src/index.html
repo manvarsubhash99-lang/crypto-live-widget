@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CryptoLive Widget - Live Crypto Tracker</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <!-- Custom Desktop Frameless Titlebar -->
+  <header class="titlebar" id="app-titlebar">
+    <div class="titlebar-brand">
+      <span class="titlebar-logo-badge">₿</span>
+      <span>CryptoLive Widget</span>
+    </div>
+    <div class="titlebar-actions">
+      <!-- Quick currency selector -->
+      <select id="quick-currency-select" class="select-input" style="padding: 2px 6px; font-size: 11px; height: 26px; border-radius: 4px; margin-right: 4px;">
+        <option value="inr">INR (₹)</option>
+        <option value="usd">USD ($)</option>
+        <option value="eur">EUR (€)</option>
+        <option value="gbp">GBP (£)</option>
+      </select>
+
+      <!-- Toggle Floating Desktop Widget Mode -->
+      <button class="icon-btn" id="btn-toggle-widget" title="Toggle Desktop Floating Widget Mode" style="width: auto; padding: 0 8px; font-size: 11px; font-weight: 700; gap: 4px;">
+        <span>🗗</span> <span id="widget-toggle-label">Widget Mode</span>
+      </button>
+
+      <!-- Always-on-top quick toggle -->
+      <button class="icon-btn" id="btn-pin-ontop" title="Always on Top">📌</button>
+
+      <!-- Refresh Now -->
+      <button class="icon-btn" id="btn-refresh-quotes" title="Refresh Live Data">🔄</button>
+
+      <!-- Window min/max/close controls -->
+      <button class="icon-btn" id="btn-win-min" title="Minimize">─</button>
+      <button class="icon-btn" id="btn-win-max" title="Maximize">▢</button>
+      <button class="icon-btn close" id="btn-win-close" title="Close to Tray">✕</button>
+    </div>
+  </header>
+
+  <!-- App Body -->
+  <div class="app-container" id="main-app-container">
+    <!-- Top Navigation for Dashboard/Alerts/Settings -->
+    <nav class="nav-header" id="main-nav-bar">
+      <div class="nav-tabs">
+        <button class="nav-tab active" data-view="dashboard">Top 5 Dashboard</button>
+        <button class="nav-tab" data-view="alerts">Price Alerts <span id="alerts-count-badge" style="background: rgba(16,185,129,0.2); color: #10B981; padding: 1px 6px; border-radius: 10px; font-size: 10px; margin-left: 4px;">0</span></button>
+        <button class="nav-tab" data-view="settings">Settings</button>
+      </div>
+
+      <div class="header-status">
+        <div class="pulse-dot" id="live-indicator"></div>
+        <span id="last-sync-time">Connected: Live Feed</span>
+      </div>
+    </nav>
+
+    <!-- Dynamic View Container -->
+    <main class="view-content" id="view-container">
+      <!-- Injected dynamically by app.js -->
+    </main>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
